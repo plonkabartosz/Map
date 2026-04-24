@@ -44,7 +44,7 @@ const osmStyle = {
       tiles: ['osm://tile.openstreetmap.org/{z}/{x}/{y}.png'],
       tileSize: 256,
       attribution: '&copy; OpenStreetMap Contributors',
-      maxzoom: 17
+      maxzoom: 18
     }
   },
   layers: [
@@ -134,7 +134,7 @@ export default function TrackingScreen() {
       const minLon = centerLon - rLon;
       const maxLon = centerLon + rLon;
       
-      const zooms = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17];
+      const zooms = [10, 11, 12, 13, 14, 15, 16, 17, 18];
       const urls: string[] = [];
       
       function lon2tile(lon: number, zoom: number) { return Math.floor((lon + 180) / 360 * Math.pow(2, zoom)); }
