@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bg-main: #202124;
+  --color-bg-nav: #2f3033;
+  --color-primary: #8ab4f8;
+  --color-text-main: #e8eaed;
+  --color-inactive: #9aa0a6;
+  --color-danger: #f28b82;
+}
+
+body {
+  background-color: var(--color-bg-main);
+  color: var(--color-text-main);
+  font-family: 'Noto Sans', system-ui, sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
